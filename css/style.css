@@ -1,0 +1,54 @@
+.container-fluid{
+    min-height: 100vh; /* Full viewport height */
+    background: black;
+}
+.search{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.form-control{
+    letter-spacing: 0.65px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    background: white;
+    border: none;
+    width: 350px;
+    height: 56px;    
+}
+button{
+    height: 56px;   
+    color: white; 
+}
+
+.results{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    max-width: 13rem;
+    margin: 7px;
+}
+@media (max-width: 400px){
+    .results .card{
+        max-width: 10rem;
+    }
+}
+
+.card p{
+    color:white;    
+}
+
+.results :nth-child(4n+1) .card-text{
+    font-family: 'Poppins', sans-serif;
+}
+.results :nth-child(4n+2) .card-textp{
+    font-family: 'Oswald', sans-serif;
+}
+.results :nth-child(4n+3) .card-text{
+    font-family: 'Merriweather Sans', sans-serif;
+}
+.results :nth-child(4n+4) .card-text{
+    font-family: 'Exo 2', sans-serif;
+}
